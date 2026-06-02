@@ -32,7 +32,7 @@ const Header = () => {
               {link.label}
             </Link>
           ))}
-          <Button variant="playful" size="sm" className="ml-2">Enroll Now</Button>
+          {/* <Button variant="playful" size="sm" className="ml-2">Enroll Now</Button> */}
         </nav>
         
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -56,9 +56,9 @@ const Header = () => {
                   {link.label}
                 </Link>
               ))}
-              <Button variant="playful" size="lg" className="mt-4 w-full">
+              {/* <Button variant="playful" size="lg" className="mt-4 w-full">
                 Enroll Now
-              </Button>
+              </Button> */}
             </div>
           </SheetContent>
         </Sheet>

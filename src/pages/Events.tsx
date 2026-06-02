@@ -1,5 +1,50 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import communityGatheringImage from "@/assets/events-community-gathering.jpeg";
+import dressUpDayImage from "@/assets/events-dress-up-day.jpeg";
+import festivalStageImage from "@/assets/events-festival-stage.jpeg";
+import kalaGhodaImage from "@/assets/events-kala-ghoda.jpeg";
+import storyPerformanceImage from "@/assets/events-story-performance.jpeg";
+import tinyTalesTownImage from "@/assets/events-tiny-tales-town.jpeg";
+
+const eventItems = [
+  // {
+  //   title: "Kala Ghoda Arts Festival",
+  //   description: "Storytelling performances for young audiences at a celebrated cultural festival.",
+  //   image: kalaGhodaImage,
+  //   alt: "Kala Ghoda Arts Festival storytelling poster"
+  // },
+  // {
+  //   title: "Tiny Tales Town",
+  //   description: "Festival storytelling sessions that invite children to listen, imagine, and respond.",
+  //   image: tinyTalesTownImage,
+  //   alt: "Storytelling session at Tiny Tales Town"
+  // },
+  {
+    title: "Community Gatherings",
+    description: "Families coming together for shared celebrations and story-rich experiences.",
+    image: communityGatheringImage,
+    alt: "Families gathered for a storytelling event"
+  },
+  {
+    title: "Special Events",
+    description: "Children and facilitators bringing stories alive in front of an audience.",
+    image: kalaGhodaImage,
+    alt: "A facilitator leading a stage storytelling event"
+  },
+  // {
+  //   title: "Dress-Up Days",
+  //   description: "Theme-based celebrations that build expression, confidence, and joy.",
+  //   image: dressUpDayImage,
+  //   alt: "Children dressed up for a themed event"
+  // },
+  // {
+  //   title: "Story Performances",
+  //   description: "Playful sessions where children participate through sound, movement, and narration.",
+  //   image: storyPerformanceImage,
+  //   alt: "Children attending an interactive story performance"
+  // }
+];
 
 const Events = () => {
   return (
@@ -11,33 +56,24 @@ const Events = () => {
           <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
             Join us for special events and community gatherings
           </p>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="group">
-              <div className="bg-white rounded-3xl overflow-hidden shadow-storytelling transition-all hover:shadow-xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1452378174528-3090a4bba7b2?w=500&h=300&fit=crop" 
-                  alt="Special event gathering"
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-all"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-kids-navy">Special Events</h3>
-                  <p className="text-muted-foreground">Unique learning experiences and celebrations</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {eventItems.map((item) => (
+              <div key={item.title} className="group">
+                <div className="h-full bg-white rounded-3xl overflow-hidden shadow-storytelling transition-all hover:shadow-xl">
+                  <div className="aspect-[4/3] overflow-hidden bg-kids-cream">
+                    <img 
+                      src={item.image}
+                      alt={item.alt}
+                      className="h-full w-full object-cover group-hover:scale-105 transition-all duration-300"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold mb-2 text-kids-navy">{item.title}</h3>
+                    <p className="text-muted-foreground">{item.description}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="group">
-              <div className="bg-white rounded-3xl overflow-hidden shadow-storytelling transition-all hover:shadow-xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=500&h=300&fit=crop" 
-                  alt="Community gathering"
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-all"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-kids-navy">Community Gatherings</h3>
-                  <p className="text-muted-foreground">Bringing families together</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </main>

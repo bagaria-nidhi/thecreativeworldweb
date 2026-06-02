@@ -23,7 +23,7 @@ const weeklyClasses = [
   },
   {
     day: "Wednesday",
-    time: "5:00 PM - 6:00 PM",
+    time: "5:30 PM - 6:30 PM",
     location: "Little Oaks Preschool, Ghatkopar West",
     programs: [
       { name: "Storytelling", ageGroup: "2 to 5 yrs" }
@@ -33,11 +33,21 @@ const weeklyClasses = [
   {
     day: "Thursday",
     time: "5:00 PM - 6:00 PM",
-    location: "PAC Preschool, Mulund",
+    location: "Basil woods Jr Preschool, Chembur",
     programs: [
       { name: "Storytelling", ageGroup: "2 to 5 yrs" }
     ],
     color: "bg-kids-yellow"
+  },
+  {
+    day: "Friday",
+    time: "5:00 PM - 6:00 PM",
+    location: "PAC Preschool and MI centre, Mulund",
+    programs: [
+      { name: "Storytelling", ageGroup: "2 to 5 yrs" },
+      { name: " Little Oaks Preschool, Vikhroli. 5:00 pm to 6:00 pm. Sessions start from July 2026", ageGroup:"2 to 5 yrs" }
+    ],
+    color: "bg-kids-navy"
   }
 ];
 
@@ -57,7 +67,7 @@ const EventsConnect = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-12xl mx-auto mb-12">
           {weeklyClasses.map((classItem, index) => (
             <div 
               key={index}
@@ -106,7 +116,7 @@ const EventsConnect = () => {
             <Button variant="secondary" size="lg" className="bg-white text-kids-navy hover:bg-white/90 rounded-full">
               View All Classes
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/20 rounded-full">
+            <Button variant="outline" size="lg" className="border-white text-kids-navy hover:bg-white/20 rounded-full">
               Contact Us
             </Button>
           </div>

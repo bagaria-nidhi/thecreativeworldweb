@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 mt-8 pt-8 text-center text-white/60">
-          <p>&copy; 2024 The Creative World. All rights reserved.</p>
+          <p>&copy; 2026 The Creative World. All rights reserved.</p>
         </div>
       </div>
     </footer>

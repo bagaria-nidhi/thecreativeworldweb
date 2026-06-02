@@ -4,7 +4,6 @@ const testimonials = [
   {
     name: "Yashika Anand",
     role: "Mother of Aayansh Anand",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
     quote: "Creative World, as the name says is full of creativity, not only stories but imagination and beyond… My son joined Creative World when he was two and thoroughly enjoyed each and every session. He is so benefitted that he started making his own stories, his vocabulary increased immensely. Also I could see positive changes in him. Getting in to a habit of reading cannot be enforced but can be encouraged, that's what Nidhi and Priyanka did in Creative World. My son could easily express himself at a very young age as his vocabulary was worked upon. Right stories with crafts and props helped him become a confident little adult.",
     rating: 5
   },

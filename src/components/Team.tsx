@@ -1,5 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import nidhiImage from "@/assets/nidhi-bagaria.jpg";
+import purviImage from "@/assets/purvi.jpeg";
+import manishaImage from "@/assets/manisha.jpeg";
+import XavioImage from "@/assets/swathin-xavio.jpeg"
 
 const teamMembers = [
   {
@@ -14,13 +17,22 @@ const teamMembers = [
     role: "Facilitator",
     description: "Dedicated to inspiring young minds through the art of storytelling and creative expression.",
     isFounder: false,
+    image: manishaImage
   },
   {
     name: "Purvi Shah",
     role: "Facilitator",
     description: "Passionate about nurturing imagination and building confidence in children through stories.",
     isFounder: false,
+    image: purviImage
   },
+  {
+    name:"Swathin Xavio",
+    role:"Facilitator",
+    isFounder:false,
+    description:"Raised in a beautiful coastal town in Kerala, Swathin is  passionate about creating meaningful impact wherever he goes.A social worker, storyteller, and aspiring travel podcaster, he loves connecting people through stories and experiences.",
+    image:XavioImage
+  }
 ];
 
 const Team = () => {
@@ -53,8 +65,8 @@ const Team = () => {
                 <CardContent className="p-6 text-center">
                   <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-hero flex items-center justify-center overflow-hidden">
                     {member.image ? (
-                      <img 
-                        src={member.image} 
+                      <img
+                        src={member.image}
                         alt={member.name}
                         className="w-full h-full object-cover"
                       />
@@ -90,11 +102,14 @@ const Team = () => {
                   className="bg-card border-kids-blue/20 hover:shadow-warm transition-all duration-300"
                 >
                   <CardContent className="p-5 text-center">
-                    <div className="w-20 h-20 mx-auto mb-3 rounded-full bg-gradient-blue flex items-center justify-center">
-                      <span className="text-2xl font-bold text-white">
-                        {member.name.charAt(0)}
-                      </span>
+                    <div className="w-20 h-20 mx-auto mb-3 rounded-full overflow-hidden bg-gradient-blue flex items-center justify-center">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
+
                     <h4 className="text-lg font-semibold text-foreground mb-1">
                       {member.name}
                     </h4>
