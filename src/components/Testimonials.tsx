@@ -25,6 +25,36 @@ const testimonials = [
     role: "Mother of Mishka",
     quote: "Creative World class is an amazing platform where kids bring out their personality to the fullest. Every month's class has unique and interesting themes where kids get exposure to new facts relating to the theme. The class has truly helped my child experience learning as fun.",
     rating: 5
+  },
+  {
+    name: "Dr. Chirag Bagadia",
+    role: "Parent of Aaryav",
+    quote: "We can surely see an evident change in Aaryav after joining storytelling sessions. He is more attentive and so hooked to listening to stories that I have to sit with him every night with a new story. Thank you so much for igniting the hunger for myriad tales, giving him a platform like Kala Ghoda at such a young age, and letting us parents join this journey with our kids. These stories are a breath of fresh air and let us relive our childhood. Immense gratitude for rekindling that little child in us.",
+    rating: 5
+  },
+  {
+    name: "Munjal Haria Shah",
+    role: "Parent of Heer",
+    quote: "Thank you so much, Nidhi ma'am. It is an honor to have such an amazing opportunity for our kids at this young age. We shall reap the benefits for many years ahead by making them confident speakers as well as great narrators. I felt like walking in the air when I saw Heer perform for the second time. Big shout out to you and your team for patiently handling our child.",
+    rating: 5
+  },
+  {
+    name: "Kinnari & Sunny Charla",
+    role: "Parents of Kriva",
+    quote: "Thank you so much, Creative Tales team, for such a great show. We are immensely proud to see our child perform and have the courage to speak on the mic. It is not just the show, but our daily observations too: our child has become so expressive and has so many words in her vocabulary. It is all thanks to the storytelling class. Thank you so much from the bottom of our hearts.",
+    rating: 5
+  },
+  {
+    name: "Khushbu Cheda",
+    role: "Parent",
+    quote: "Thank you so much, ma'am, for this amazing opportunity. Loved the energy of the kids and how well everyone performed.",
+    rating: 5
+  },
+  {
+    name: "Hiral Mota",
+    role: "Parent of Kriday",
+    quote: "We feel so proud of the kids. They stood confidently in front of the crowd at such a young age. Thank you for such a great opportunity and for your efforts. We enjoyed it thoroughly.",
+    rating: 5
   }
 ];
 

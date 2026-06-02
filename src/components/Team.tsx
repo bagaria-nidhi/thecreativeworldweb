@@ -44,11 +44,11 @@ const Team = () => {
           <h3 className="text-xl md:text-2xl font-semibold text-center text-foreground mb-8">
             Founders
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-8 max-w-4xl mx-auto">
             {founders.map((member, index) => (
               <Card
                 key={index}
-                className="bg-card border-kids-pink/20 hover:shadow-storytelling transition-all duration-300"
+                className="w-full max-w-xl bg-card border-kids-pink/20 hover:shadow-storytelling transition-all duration-300"
               >
                 <CardContent className="p-6 text-center">
                   <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-hero flex items-center justify-center overflow-hidden">

@@ -1,41 +1,36 @@
-import { Palette, Music, Theater, BookOpen, Wand2, Users } from "lucide-react";
+import creativeArtsImage from "@/assets/creative-arts-rock-painting.jpeg";
 
 const methods = [
   {
-    icon: Theater,
     title: "Interactive Storytelling",
     description: "Children become part of the story through role-play and dramatic expression.",
-    color: "bg-gradient-pink"
+    color: "bg-gradient-to-br from-rose-500 to-orange-400"
   },
   {
-    icon: Palette,
     title: "Creative Arts",
     description: "Drawing, painting, and crafting bring stories to visual life.",
-    color: "bg-gradient-blue"
+    color: "bg-gradient-to-br from-sky-500 to-teal-400",
+    image: creativeArtsImage
   },
   {
-    icon: Music,
     title: "Music & Movement",
     description: "Songs, dance, and rhythm enhance story engagement and memory.",
-    color: "bg-gradient-green"
+    color: "bg-gradient-to-br from-emerald-500 to-lime-400"
   },
   {
-    icon: BookOpen,
     title: "Reading Sessions",
     description: "Curated stories read aloud with expression and imagination.",
-    color: "bg-gradient-pink"
+    color: "bg-gradient-to-br from-violet-500 to-fuchsia-400"
   },
   {
-    icon: Wand2,
     title: "Story Creation",
     description: "Children create their own tales, becoming authors of their imagination.",
-    color: "bg-gradient-blue"
+    color: "bg-gradient-to-br from-amber-400 to-red-400"
   },
   {
-    icon: Users,
     title: "Group Activities",
     description: "Collaborative projects that build teamwork through shared storytelling.",
-    color: "bg-gradient-green"
+    color: "bg-gradient-to-br from-cyan-500 to-blue-500"
   }
 ];
 
@@ -59,11 +54,30 @@ const HowWeImpact = () => {
           {methods.map((method, index) => (
             <div 
               key={index}
-              className={`${method.color} rounded-3xl p-8 text-white space-y-4 hover:scale-105 transition-all`}
+              className={`${method.color} ${
+                method.image ? "md:col-span-2 lg:col-span-1" : ""
+              } rounded-3xl overflow-hidden text-white hover:scale-[1.02] transition-all`}
             >
-              <method.icon className="h-10 w-10" />
-              <h3 className="text-xl font-bold">{method.title}</h3>
-              <p className="text-white/90 leading-relaxed">{method.description}</p>
+              {method.image ? (
+                <div className="h-full">
+                  <div className="aspect-[4/3] w-full overflow-hidden bg-white/10">
+                    <img
+                      src={method.image}
+                      alt="Painted stones created during a Creative Arts activity"
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div className="p-8 space-y-4">
+                    <h3 className="text-xl font-bold">{method.title}</h3>
+                    <p className="text-white/90 leading-relaxed">{method.description}</p>
+                  </div>
+                </div>
+              ) : (
+                <div className="p-8 space-y-4 h-full">
+                  <h3 className="text-xl font-bold">{method.title}</h3>
+                  <p className="text-white/90 leading-relaxed">{method.description}</p>
+                </div>
+              )}
             </div>
           ))}
         </div>
