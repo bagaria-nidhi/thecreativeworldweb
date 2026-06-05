@@ -61,12 +61,12 @@ const Programs = () => {
               <div className="text-white/80 text-sm font-medium mb-6">
                 Age: {program.ageRange}
               </div>
-              <Button 
+              {/* <Button 
                 variant="outline" 
                 className="bg-white/20 text-white border-white/40 hover:bg-white hover:text-kids-navy rounded-full font-semibold backdrop-blur-sm"
               >
                 Read More →
-              </Button>
+              </Button> */}
             </div>
           ))}
         </div>

@@ -57,9 +57,9 @@ const About = () => {
               </p>
             </div>
             
-            <Button variant="playful" size="lg" className="text-base px-8">
+            {/* <Button variant="playful" size="lg" className="text-base px-8">
               Read More
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>

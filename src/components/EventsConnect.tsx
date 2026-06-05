@@ -47,7 +47,7 @@ const weeklyClasses = [
       { name: "Storytelling", ageGroup: "2 to 5 yrs" },
       { name: " Little Oaks Preschool, Vikhroli. 5:00 pm to 6:00 pm. Sessions start from July 2026", ageGroup:"2 to 5 yrs" }
     ],
-    color: "bg-kids-navy"
+    color: "bg-kids-navy/50"
   }
 ];
 

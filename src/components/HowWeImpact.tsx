@@ -2,40 +2,44 @@ import creativeArtsImage from "@/assets/creative-arts-rock-painting.jpeg";
 import musicDance from "@/assets/music-dance.jpeg"
 import interactiveStoryTelling from "@/assets/interactive-story-telling.jpeg"
 import groupActivities from "@/assets/group-activities.jpeg"
+import storyReading from "@/assets/story-reading.jpeg"
+import storyCreation from "@/assets/story-creation.jpeg"
 
 const methods = [
   {
     title: "Interactive Storytelling",
     description: "Children become part of the story through role-play and dramatic expression.",
-    color: "bg-gradient-to-br from-rose-500 to-orange-400",
+    color: "bg-kids-navy/50",
     image:interactiveStoryTelling
   },
   {
     title: "Creative Arts",
     description: "Drawing, painting, and crafting bring stories to visual life.",
-    color: "bg-gradient-to-br from-sky-500 to-teal-400",
+    color: "bg-kids-yellow/50",
     image: creativeArtsImage
   },
   {
     title: "Music & Movement",
     description: "Songs, dance, and rhythm enhance story engagement and memory.",
-    color: "bg-gradient-to-br from-emerald-500 to-lime-400",
+    color: "bg-kids-pink",
     image: musicDance
   },
   {
     title: "Reading Sessions",
     description: "Curated stories read aloud with expression and imagination.",
-    color: "bg-gradient-to-br from-violet-500 to-fuchsia-400"
+    color: "bg-kids-green",
+    image: storyReading
   },
   {
     title: "Story Creation",
     description: "Children create their own tales, becoming authors of their imagination.",
-    color: "bg-gradient-to-br from-amber-400 to-red-400"
+    color: "bg-kids-blue",
+    image: storyCreation
   },
   {
     title: "Group Activities",
     description: "Collaborative projects that build teamwork through shared storytelling.",
-    color: "bg-gradient-to-br from-cyan-500 to-blue-500",
+    color: "bg-kids-red/30",
     image:groupActivities
   }
 ];

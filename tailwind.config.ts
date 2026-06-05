@@ -69,7 +69,8 @@ export default {
 					green: 'hsl(var(--kids-green))',
 					yellow: 'hsl(var(--kids-yellow))',
 					cream: 'hsl(var(--kids-cream))',
-					navy: 'hsl(var(--kids-navy))'
+					navy: 'hsl(var(--kids-navy))',
+					red: 'hsl(var(--kids-red))'
 				}
 			},
 			backgroundImage: {

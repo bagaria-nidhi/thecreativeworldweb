@@ -75,12 +75,12 @@ const Services = () => {
             </div>
           ))}
         </div>
-
+{/* 
         <div className="text-center mt-12">
           <Button variant="playful" size="lg">
             Explore Collaboration
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

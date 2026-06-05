@@ -44,7 +44,7 @@ All colors MUST be HSL.
     --kids-yellow: 45 100% 50%;
     --kids-cream: 180 40% 96%;
     --kids-navy: 220 65% 30%;
-
+    --kids-red: 0 75% 40%;
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--kids-blue)), hsl(var(--kids-pink)));
     --gradient-pink: linear-gradient(135deg, hsl(var(--kids-pink)), hsl(340 75% 90%));

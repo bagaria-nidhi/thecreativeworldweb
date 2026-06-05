@@ -26,9 +26,9 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="playful" size="lg" className="text-base px-8">
+            {/* <Button variant="playful" size="lg" className="text-base px-8">
               Read More
-            </Button>
+            </Button> */}
           </div>
         </div>
         
