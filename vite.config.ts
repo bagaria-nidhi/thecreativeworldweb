@@ -5,8 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 const repositoryName = process.env.GITHUB_REPOSITORY?.split("/")[1];
 const isUserPagesSite = repositoryName?.toLowerCase().endsWith(".github.io");
+const hasCustomDomain = Boolean(process.env.CUSTOM_DOMAIN);
 const base =
-  process.env.GITHUB_ACTIONS && repositoryName && !isUserPagesSite
+  process.env.GITHUB_ACTIONS && repositoryName && !isUserPagesSite && !hasCustomDomain
     ? `/${repositoryName}/`
     : "/";
 

@@ -36,6 +36,8 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          CUSTOM_DOMAIN: www.thecreativeworld.co.in
 
       - name: Add SPA fallback
         run: |
