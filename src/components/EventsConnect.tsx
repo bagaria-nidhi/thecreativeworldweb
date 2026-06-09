@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, MapPin, ArrowRight, Users } from "lucide-react";
+import { Clock, MapPin, MessageCircle, Users } from "lucide-react";
+
+const whatsappLink =
+  "https://wa.me/919892219417?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20The%20Creative%20World%20classes.";
 
 const weeklyClasses = [
   {
@@ -110,14 +113,14 @@ const EventsConnect = () => {
           </h3>
           <p className="text-white/90 mb-8 max-w-2xl mx-auto">
             Join our creative community and let your child discover the magic of storytelling. 
-            Contact us today to learn more about our programs.
+            Message us on WhatsApp to learn more about our programs.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="secondary" size="lg" className="bg-white text-kids-navy hover:bg-white/90 rounded-full">
-              View All Classes
-            </Button>
-            <Button variant="outline" size="lg" className="border-white text-kids-navy hover:bg-white/20 rounded-full">
-              Contact Us
+          <div className="flex justify-center">
+            <Button asChild variant="secondary" size="lg" className="bg-white text-kids-navy hover:bg-white/90 rounded-full">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                WhatsApp Us
+              </a>
             </Button>
           </div>
         </div>

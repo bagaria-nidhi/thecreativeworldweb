@@ -54,7 +54,7 @@ const Team = () => {
         {/* Founders */}
         <div className="mb-12">
           <h3 className="text-xl md:text-2xl font-semibold text-center text-foreground mb-8">
-            Founders
+            Founder
           </h3>
           <div className="flex flex-wrap justify-center gap-8 max-w-4xl mx-auto">
             {founders.map((member, index) => (

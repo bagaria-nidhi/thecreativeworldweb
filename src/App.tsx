@@ -8,6 +8,7 @@ import Gallery from "./pages/Gallery";
 import Workshop from "./pages/Workshop";
 import Events from "./pages/Events";
 import NotFound from "./pages/NotFound";
+import FloatingWhatsAppButton from "./components/FloatingWhatsAppButton";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <FloatingWhatsAppButton />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

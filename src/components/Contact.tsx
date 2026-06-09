@@ -1,7 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
@@ -17,42 +13,8 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          <Card className="border-0 shadow-storytelling rounded-3xl">
-            <CardContent className="p-8 space-y-6">
-              <form className="space-y-6">
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-kids-navy">Name</label>
-                  <Input placeholder="Your full name" className="rounded-xl border-border" />
-                </div>
-                
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-kids-navy">Email</label>
-                  <Input type="email" placeholder="your.email@example.com" className="rounded-xl border-border" />
-                </div>
-                
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-kids-navy">Phone</label>
-                  <Input type="tel" placeholder="(555) 123-4567" className="rounded-xl border-border" />
-                </div>
-                
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-kids-navy">Message</label>
-                  <Textarea 
-                    placeholder="Tell us about your interest..." 
-                    rows={5}
-                    className="rounded-xl border-border resize-none"
-                  />
-                </div>
-                
-                <Button variant="playful" className="w-full" size="lg">
-                  Send Message
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
-          
-          <div className="space-y-6">
+        <div className="max-w-2xl mx-auto">
+          <div className="space-y-6 bg-kids-cream rounded-3xl p-8 shadow-storytelling">
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-kids-navy">Contact Information</h3>
               <p className="text-muted-foreground leading-relaxed">
